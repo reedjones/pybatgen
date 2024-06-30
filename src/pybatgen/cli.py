@@ -1,6 +1,5 @@
 """Console script for pybatgen."""
 
-import pybatgen
 import os
 import shutil
 import sys
@@ -18,7 +17,7 @@ from rich.style import Style
 console = Console()
 app = typer.Typer()
 
-APP_DATA_FOLDER = pybatgen.APP_DATA_FOLDER
+APP_DATA_FOLDER = Path.home() / "AppData/Local/python_script_generator"
 
 
 def banner():
@@ -40,9 +39,6 @@ def banner():
 def create_app_data_folder():
     APP_DATA_FOLDER.mkdir(parents=True, exist_ok=True)
     console.log(f"App data folder: {APP_DATA_FOLDER}")
-
-
-
 
 
 @app.command()
