@@ -21,7 +21,7 @@ deploy:
   distributions: sdist bdist_wheel
   user: reedjones
   password:
-    secure: PLEASE_REPLACE_ME
+    secure: CHANGE_ME
   on:
     tags: true
     repo: reedjones/pybatgen

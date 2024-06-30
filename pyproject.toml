@@ -44,8 +44,6 @@ package-dir = {"" = "src"}
 "*" = ["*.*"]
 
 
-
-
 # Mypy
 # ----
 
@@ -56,7 +54,6 @@ files = "."
 strict = true
 warn_unreachable = true
 warn_no_return = true
-
 [[tool.mypy.overrides]]
 # Don't require test functions to include types
 module = "tests.*"
