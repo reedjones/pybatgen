@@ -1,4 +1,10 @@
-on: push
+name: Publish to PyPI
+
+on:
+  workflow_run:
+    workflows: ["Build and Store Python Package"]
+    types:
+      - completed
 jobs:
   publish-to-pypi:
     name: "Publish Python 🐍 distribution 📦 to PyPI"
